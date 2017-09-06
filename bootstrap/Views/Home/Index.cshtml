@@ -18,60 +18,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-    @*class="img-responsive"   عکس را ریسپانسیو میکند*@
-    <div>
-        <div class="container" style="margin-top:15px;">
-            @*<======  مارجین چپ و راست بخاطر این دستور است*@
-            <div class="row">
-                <div class="col-lg-1 col-lg-pull-2 pull-right" dir="rtl" style="background-color:blue;">سلام 1</div>    @*پول رایت میبره راست و کول پول به چپ میبرد*@
-                <br />
-                <div class="col-md-2 pull-right" dir="rtl" style="background-color:red;">salam2</div>
-                <br />
-                <div class="col-sm-3 pull-right" style="background-color:green;">salam3</div>
-                <br />
-                <div class="col-xs-4 pull-right" style="background-color:brown;">salam4</div>
-                <br />
-                <div class="col-lg-5 pull-right" style="background-color:purple;">salam5</div>
-                <br />
-                <div class="col-lg-6  col-lg-push-2 pull-right" style="background-color:orange;">salam6</div>          @*کول پوش ایتم را به راست میبرد*@
-                <br />
-                <div class="col-lg-7" style="background-color:orchid;">salam7</div>
-                <br />
-                <div class="col-lg-8" style="background-color:sandybrown;">salam8</div>
-                <br />
-                <div class="col-lg-9" style="background-color:darkolivegreen;">salam9</div>
-                <br />
-                <div class="col-lg-10" style="background-color:mediumaquamarine;">salam10</div>
-                <br />
-                <div class="col-lg-11" style="background-color:chartreuse;">salam11</div>
-                <br />
-                <div class="col-lg-12" style="background-color:yellow;">salam12</div>
-            </div>
-        </div>
+    <div style="text-align:center ">
+        <p class="lead">سلام لید</p>
+        <p>
+            <mark>سلام مارک</mark>
+        </p>
+        <p>
+            <small>سلام اسمال</small>
+        </p>
+        <p>
+            <del>سلام دل</del>
+        </p>
+        <p>
+            <s>سلام اس</s>
+        </p>
+        <p>
+            <ins>سلام اینتس</ins>
+        </p>
+        <p>
+            <u>سلام یو</u>
+        </p>
+        <p>
+            <strong>سلام استرانگ</strong>
+        </p>
+        <p>
+            <em>سلام ام</em>
+        </p>
+        <p>
+            <i>سلام آی</i>
+        </p>
+        <p class="text-center"> سلام تکس سنتر</p>
+        <p class="text-left">سلام تکست لفت</p>                    @*از چپ مینویسد و فقط چپ را منظم میکند*@
+        <p class="text-right">سلام تکست رایت</p>                  @*از راست مینویسد و فقط راست را منظم میکند*@
+        <p class="text-justify">سلام تکست جاستی فای</p>           @*خط را راست و چپش را منظم روی یک خط میکند*@
+        <p class="text-nowrap">سلام تکست نه وارپ</p>              @*این دستور میگوید خط شکسته نشود و به خط بعدی نرود و کل متن در یک خط باشد*@
+        <p class="text-lowercase"> hey text lowercase</p>
+        <p class="text-uppercase">hey text upercase</p>
+        <p class="initialism">hey initialism</p>                  @*همان قبلی فقط فونت را بزرگ نمیکند*@
+        <p class="text-capitalize">hey text capitalize</p>        @*خیلی کاربردی*@
+        <abbr title="سلام">salam title</abbr>                      @*زیرش خط میکشد و موس را تغییر میدهد علامت سوال میگذارد و تایتل میزند*@
+        <br />
+        <br />
+        <address class="text-left" style="margin-left:15px;">
+            @*برای موتور های جستوجوگر و سئوی سایت*@
+            <strong>mahdi hajian</strong><br />
+            iran-esfahan . ...<br />
+            <abbr title="phone">p:</abbr>
+            012-3456789<br />
+            mail : <a href="mahdi.hajian@gmail.com">mahdi.hajian@gmail.com</a>
+        </address>
+        <blockquote>سلام بلاک</blockquote>                          @*کمتر از استرانگ برجسته میکنه*@
+        <blockquote>
+            <p>some text to text some text to text some text to text.</p>   @*متن و توضیحات*@
+            <footer>one desceptr</footer>
+        </blockquote>
 
-        <hr />
-        <div class="container">
-            <div class="row" style="background-color:azure;height:110px;margin:20px 0 0 20px">
-                <div class="col-lg-6">
-                    <div class="col-lg-12" style="background-color:magenta;height:30px;margin-top:20px"></div>
-                    <div class="col-lg-12" style="background-color:magenta;height:30px;margin-top:10px"></div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="col-lg-12" style="background-color:orange;height:70px;margin-top:20px"></div>
-                </div>
-            </div>
-
-            <hr />
-            <div class="row" style="margin-top:15px;">
-                <div class="col-lg-1" style="background-color:green;height:40px;"></div>
-                <div class="col-lg-3 col-lg-offset-2" style="background-color:green;height:40px;"></div> @*اف ست بین خودش و قبلیش فاصله میندازه*@
-                <div class="col-lg-3 col-lg-offset-1" style="background-color:green;height:40px;"></div>
-                <div class="col-lg-1 col-lg-offset-1" style="background-color:green;height:40px;"></div>
-                @*تفاوت افست و کول پول و کول پوش اینه ک افست کل مجموعه بعد خود را هم تغییر میدهد مانند مارجین
-                    ولی باتوم یا تاپ یا کول پول یا کول پوش فقط خودشان تغییر میکنند مثلا میرود زیر بعدی به جای اینکه
-                    بعدی را ببرند جلو*@
-            </div>
-        </div>
+        <blockquote class="blockquote-reverse">                             @*متن و توضیحات برای فارسی*@
+            <p>مقداری متن زیبای فارسی</p>
+            <footer>کاری از مهدی حاجیان </footer>
+        </blockquote>
     </div>
 </body>
 </html>
