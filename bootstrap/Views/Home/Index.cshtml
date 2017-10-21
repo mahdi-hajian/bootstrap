@@ -2,20 +2,20 @@
 @{
     ViewBag.Title = "index";
 }
-<form id="form1"  class="container" style="font-family:Tahoma;">
+<form class="container" style="font-family:Tahoma;">
     <div>
         <button class="btn btn-lg btn-default">
-            <span class="glyphicon glyphicon-globe"></span>
+            <span class="glyphicon glyphicon-globe"></span>   @*برای شکلک گذاشتن*@
             home
             <span class="glyphicon glyphicon-menu-down"></span>
         </button>
     </div>
     <br />
     <br />
-    <div class="dropdown">
-        <button class="btn btn-info dropdown-toggle" data-toggle="dropdown">
+    <div class="dropdown">                                                         @*اگر نذاریم این کلاس را در پایین ترین جای صفحه میاید گزینه ها*@
+        <button class="btn btn-info dropdown-toggle" data-toggle="dropdown">       @*اگر دیتا تاگل نباشد گزینه ها اصلا نمی آید*@
             sabad
-            <span class="caret"></span>
+            <span class="caret"></span>                                            @*همان نشانه ی کوچک در بقل نوشته ک مثل توانه*@                      
         </button>
         <ul class="dropdown-menu">
             <li><a>one site</a></li>
@@ -26,19 +26,19 @@
     </div>
     <br />
     <br />
-    <div class="dropdown" dir="rtl">
-        <button class="btn btn-info dropdown-toggle" data-toggle="dropdown">
+    <div class="dropdown" dir="rtl">                                                  @*دکمه را به راست میبرد*@
+        <button class="btn btn-info dropdown-toggle" data-toggle="dropdown">    
             سبد کالا
             <span class="caret"></span>
         </button>
-        <ul class="dropdown-menu dropdown-menu-right" style="text-align:right">
-            <li class="dropdown-header">سایت ها</li>
+        <ul class="dropdown-menu dropdown-menu-right" style="text-align:right">       @*کلاس دومی گزینه هارا به راست میبرد*@
+            <li class="dropdown-header">سایت ها</li>                                 @*نوع نوشته و رنگ و .. تغییر میکند و هدر میشود*@
             <li><a>سایت اول</a></li>
             <li><a>سایت دوم</a></li>
             <li><a>سایت سوم</a></li>
             <li><a>سایت چهارم</a></li>
-            <li class="divider"></li>
-            <li class="dropdown-header">اموزش ها</li>
+            <li class="divider"></li>                                                 @*خط می اندازد*@
+            <li class="dropdown-header">اموزش ها</li>                                 
             <li><button class="btn btn-success btn-block">جاوا</button></li>
             <li><button class="btn btn-warning btn-block">سی شارپ</button></li>
             <li><button class="btn btn-danger btn-block">سی پلاس پلاس</button></li>
