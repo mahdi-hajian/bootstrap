@@ -2,7 +2,7 @@
 @{
     ViewBag.Title = "index";
 }
-<form class="container" style="font-family:Tahoma;">
+<form class="container-fluid" style="font-family:Tahoma;">
     <div>
         <ul class="nav nav-tabs">
             <li class="active"><a><span class="glyphicon glyphicon-home"></span> Home</a></li>
@@ -48,23 +48,30 @@
     <br />
     <br />
     <div>
-        <ul class="nav nav-tabs">
-            <li class="active"><a><span class="glyphicon glyphicon-home"></span> Home</a></li>
-            <li><a><span class="glyphicon glyphicon-envelope"></span> messages</a></li>
-            <li><a><span class="glyphicon glyphicon-usd"></span> store</a></li>
-            <li class="dropdown">
-                <ul>
-                    <li class="dropdown-toggle" data-toggle="dropdown">
-                        <a><span class="glyphicon glyphicon-blackboard"></span> learn <span class="caret"></span></a>
-                    </li>
-                 </ul>
+        <nav class="navbar-default">
 
-            <ul class="dropdown-menu">
-                <li><a>جاوا</a></li>
-                <li><a>خر</a></li>
+            <ul class="nav nav-pills">
+                <li class="active"><a><span class="glyphicon glyphicon-home"></span> Home</a></li>
+                <li class="active"><a>profile <img class="img-circle" style="width:25px;height:18px" src="~/Content/image/IMG_20170511_144217.jpg" /> <span></span></a></li>
+                <li><a><span class="glyphicon glyphicon-envelope"></span> messages <span class="badge">3</span></a></li>
+                <li><a><span class="glyphicon glyphicon-usd"></span> store</a></li>
+                <li>
+                    <ul class="nav">
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-blackboard"></span> learn <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a>java</a></li>
+                                <li><a>c#</a></li>
+                                <li><a>python</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a><span class="glyphicon glyphicon-thumbs-up"></span> content us</a></li>
             </ul>
-            </li>
-            <li><a><span class="glyphicon glyphicon-thumbs-up"></span> content us</a></li>
-        </ul>
+        </nav>
+        <br />
+        <br />
+        <br />
     </div>
 </form>
