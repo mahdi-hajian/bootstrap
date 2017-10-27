@@ -70,8 +70,23 @@
         <br />
         <br />
     </div>
+    
+    @*<script>
+        $(document).ready(function () {
+            $(document).scroll(function () {
+                var scroll = $(document).scrollTop();
 
-    <nav class="navbar navbar-default">
+                if (scroll > 10) {
+                    $("#nav").fadeOut();
+                } else if (scroll < 200) {
+                    $("#nav").fadeIn();
+                }
+            });
+
+        });
+    </script>*@
+
+    <nav class="navbar navbar-default navbar-fixed-top" id="nav">
         <div>
             <div class="navbar-header">
                 <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
